@@ -16,6 +16,8 @@
 ├── app.py                    # 대시보드
 ├── requirements.txt          # Python 라이브러리 목록
 ├── REPORT.md                 # 분석 리포트
+├── docs/
+│   └── dashboard_scenarios.md # 대시보드 스크린샷 시나리오
 └── README.md                 # 이 안내서
 ```
 
@@ -55,6 +57,7 @@ streamlit run app.py
 
 - 출처: 서울 열린데이터광장, 「서울시 지하철호선별 역별 승하차 인원 정보」
 - 다운로드할 파일: `CARD_SUBWAY_MONTH_YYYYMM.csv` 형식의 월별 CSV
+- 수집 기간과 파일: 2024년 9월~2026년 8월, 월별 CSV 24개(`CARD_SUBWAY_MONTH_202409.csv` ~ `CARD_SUBWAY_MONTH_202608.csv`)를 받아 `data/raw/`에 넣는다.
 - 수집 방법: 서울 열린데이터광장에서 분석 대상 월의 CSV를 내려받아 `data/raw/` 폴더에 넣습니다. 파일명을 바꾸지 않고 월별 원본 파일을 보관한 뒤 `01_load_data_v2.py`를 실행하면 성수역 자료를 모아 `data/seongsu_daily.csv`를 만듭니다.
 - 분석 대상: 노선명 `2호선`, 역명 `성수`
 - 라이선스: **TODO: 다운로드 페이지에서 이용 조건과 라이선스를 확인해 기록하세요.**
