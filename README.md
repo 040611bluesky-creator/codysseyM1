@@ -2,6 +2,8 @@
 
 서울 지하철 2호선 성수역의 일별 승차·하차 자료를 정리하고, 추세·요일별 차이·이상치를 분석하는 프로젝트입니다. 분석 결과와 그래프는 `REPORT.md`와 `images/`에서 확인할 수 있습니다.
 
+배포된 대시보드: https://seongsu-station-dashboard.streamlit.app/
+
 ## 폴더 구조
 
 ```text
@@ -93,7 +95,7 @@ streamlit run app.py
    - Repository: 본인의 GitHub 저장소
    - Branch: `main`
    - Main file path: `app.py`
-7. 배포가 끝나면 표시된 앱 주소를 열어 동작을 확인하고, 그 주소를 `REPORT.md`의 배포 URL TODO에 적습니다.
+7. 배포된 앱 주소는 https://seongsu-station-dashboard.streamlit.app/ 이며, REPORT.md에 기재했다.
 
 Community Cloud의 배포 설정에는 Python 버전 선택이 있습니다. 현재 안내상 기본값은 Python 3.12이며, 이 프로젝트의 고정 라이브러리 버전은 Python 3.11 이상이 필요합니다. [Python 버전 및 배포 설정 안내](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/deploy)를 참고하세요.
 

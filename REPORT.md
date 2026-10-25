@@ -72,7 +72,7 @@
 
 Streamlit 대시보드에서는 기간, 지표(총 이용객·승차·하차), 이동평균 일수, 요일, 이상치 기준을 바꿔 결과를 살펴볼 수 있다. 배포 전에는 프로젝트 폴더에서 `streamlit run app.py`를 실행한다.
 
-- 배포 URL: **TODO: 배포 후 URL 입력**
+- 배포 URL: https://seongsu-station-dashboard.streamlit.app/
 - 스크린샷: **TODO: 여기에 대시보드 화면 캡처를 추가**
 - 캡처 시나리오: [docs/dashboard_scenarios.md](docs/dashboard_scenarios.md)
 
