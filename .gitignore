@@ -1,1 +1,7 @@
+# 월별 원본 CSV는 용량을 고려해 GitHub에서 제외
 data/raw/
+AI 데이터 분석 데이터 기반 트렌드 분석.txt
+.venv/
+__pycache__/
+*.py[cod]
+.streamlit/secrets.toml
