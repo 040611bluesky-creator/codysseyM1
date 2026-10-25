@@ -60,9 +60,11 @@ streamlit run app.py
 - 수집 기간과 파일: 2024년 9월~2026년 8월, 월별 CSV 24개(`CARD_SUBWAY_MONTH_202409.csv` ~ `CARD_SUBWAY_MONTH_202608.csv`)를 받아 `data/raw/`에 넣는다.
 - 수집 방법: 서울 열린데이터광장에서 분석 대상 월의 CSV를 내려받아 `data/raw/` 폴더에 넣습니다. 파일명을 바꾸지 않고 월별 원본 파일을 보관한 뒤 `01_load_data_v2.py`를 실행하면 성수역 자료를 모아 `data/seongsu_daily.csv`를 만듭니다.
 - 분석 대상: 노선명 `2호선`, 역명 `성수`
-- 라이선스: **TODO: 다운로드 페이지에서 이용 조건과 라이선스를 확인해 기록하세요.**
+- 라이선스: 공공누리 1유형(출처표시, 상업적 이용 및 변경 가능). 저작권자는 서울특별시, 코레일, 공항철도이며 제3저작권자는 없다. 서울 열린데이터광장 데이터셋 페이지의 이용허락범위를 2026-10-25에 확인했다.
+- 출처 표시: 서울특별시, 「서울시 지하철호선별 역별 승하차 인원 정보」, 서울 열린데이터광장 (https://data.seoul.go.kr/dataList/OA-12914/S/1/datasetView.do)
+- 변경 사항: 원본 월별 CSV에서 2호선 성수역의 일별 승차·하차 값만 추출하고, 승차와 하차를 합산한 total 열을 추가했다.
 
-원본 데이터의 재배포 여부는 다운로드 페이지의 이용 조건을 확인한 뒤 결정하세요.
+공공누리 1유형이라 출처를 표시하면 재배포할 수 있다. 다만 원본 CSV는 용량 때문에 저장소에서 제외했다.
 
 ## Streamlit Community Cloud 배포 준비
 
@@ -95,4 +97,4 @@ streamlit run app.py
 
 Community Cloud의 배포 설정에는 Python 버전 선택이 있습니다. 현재 안내상 기본값은 Python 3.12이며, 이 프로젝트의 고정 라이브러리 버전은 Python 3.11 이상이 필요합니다. [Python 버전 및 배포 설정 안내](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/deploy)를 참고하세요.
 
-GitHub 계정과 Streamlit 서비스의 저장소 접근 권한이 필요합니다. 저장소 공개 범위와 원본 CSV 포함 여부는 데이터 이용 조건을 확인해 결정하세요.
+GitHub 계정과 Streamlit 서비스의 저장소 접근 권한이 필요합니다. 공공누리 1유형이라 출처를 표시하면 재배포할 수 있다. 다만 원본 CSV는 용량 때문에 저장소에서 제외했다.
