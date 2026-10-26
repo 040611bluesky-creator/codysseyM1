@@ -40,6 +40,6 @@
 
 ## 캡처 파일 이름 예시
 
-- `01_weekdays.png`
-- `02_january_holiday_window.png`
-- `03_seven_day_average.png`
+- `dashboard_01_default.png`
+- `dashboard_02_weekday_only.png`
+- `dashboard_03_ma7.png`
